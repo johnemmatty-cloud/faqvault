@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FAQVault — Daily AI-focused FAQ collections, researched and written by AI, published automatically every morning." />
+  <title>FAQVault — Daily AI FAQ Collections</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <!-- Inline SVG logo -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#1f6feb"/>
+          <path d="M8 10h10M8 14h8M8 18h10M8 22h6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="23" cy="20" r="5" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+          <path d="M23 18v2.5l1.5 1.5" stroke="#58a6ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 9l1.5 1.5L25 8" stroke="#3fb950" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        FAQVault
+      </a>
+      <span class="tagline">Daily AI FAQ Collections</span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>AI Questions, Answered Daily</h1>
+        <p>Fresh FAQ collections on the latest AI news — models, research, policy, and tools — generated every morning.</p>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="container">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-topic="All">All</button>
+        <button class="filter-btn" data-topic="Models">Models</button>
+        <button class="filter-btn" data-topic="Research">Research</button>
+        <button class="filter-btn" data-topic="Policy">Policy</button>
+        <button class="filter-btn" data-topic="Tools">Tools</button>
+        <button class="filter-btn" data-topic="Other">Other</button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="cardsGrid">
+        <div class="empty-state"><p>Loading FAQ collections…</p></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>FAQVault · AI-generated content, sourced from real publications · Updated daily</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

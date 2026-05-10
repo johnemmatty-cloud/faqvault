@@ -1,0 +1,37 @@
+name: Daily AI FAQ Generator
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 8am UTC every day
+  workflow_dispatch:        # Allow manual trigger from Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate new FAQ collections
+        run: python generate_faqs.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "FAQVault Bot"
+          git config user.email "bot@faqvault"
+          git add data/faqs.json
+          git diff --cached --quiet || git commit -m "feat: AI daily FAQ update $(date +%Y-%m-%d)"
+          git push

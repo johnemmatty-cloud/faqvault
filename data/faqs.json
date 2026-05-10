@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1746871200000",
+    "slug": "claude-4-opus-capabilities-breakdown",
+    "title": "Claude 4 Opus: Capabilities Breakdown",
+    "category": "AI",
+    "sub_topic": "Models",
+    "created_at": "2026-05-10",
+    "faqs": [
+      {
+        "q": "What is Claude 4 Opus and what was announced?",
+        "a": "Claude 4 Opus is Anthropic's most capable model as of May 2026, featuring extended context windows up to 1 million tokens, improved reasoning, and enhanced tool use. It was announced alongside Claude 4 Sonnet and Haiku in a tiered release strategy.\n\nSource: Anthropic Blog — Introducing Claude 4"
+      },
+      {
+        "q": "How does Claude 4 Opus handle long-context tasks?",
+        "a": "Claude 4 Opus uses a hybrid attention mechanism that efficiently processes up to 1 million tokens without quadratic memory growth. It achieves this via sparse attention patterns combined with sliding-window layers, allowing whole codebases or book-length documents to fit in a single context.\n\nSource: The Verge — Anthropic's Claude 4 can read entire codebases at once"
+      },
+      {
+        "q": "Why does Claude 4 Opus matter for enterprise software development?",
+        "a": "Enterprise teams can now feed entire repositories, API specs, and documentation into a single prompt, enabling tasks like cross-file refactoring, dependency analysis, and compliance auditing without chunking. Anthropic reported a 40% reduction in hallucination rates on coding benchmarks versus Claude 3.\n\nSource: TechCrunch — Why enterprises are rushing to adopt Claude 4"
+      },
+      {
+        "q": "How does Claude 4 Opus compare to GPT-5 and Gemini 2.0?",
+        "a": "On MMLU and HumanEval benchmarks, Claude 4 Opus and GPT-5 trade wins depending on domain. Claude 4 Opus leads on long-context retrieval and safety-constrained tasks, while GPT-5 edges ahead on mathematical reasoning. Gemini 2.0 Ultra retains multimodal advantages for image and video understanding.\n\nSource: Ars Technica — Benchmark wars: Claude 4 vs GPT-5 vs Gemini 2.0"
+      },
+      {
+        "q": "What are the safety concerns and limitations of Claude 4 Opus?",
+        "a": "Anthropic's Constitutional AI v3 underpins Claude 4, but researchers have noted that longer contexts increase the attack surface for prompt injection. The model also inherits training data cutoffs, meaning very recent events require web search augmentation for accuracy.\n\nSource: MIT Technology Review — The hidden risks of million-token AI models"
+      }
+    ]
+  },
+  {
+    "id": "1746784800000",
+    "slug": "eu-ai-act-enforcement-begins",
+    "title": "EU AI Act Enforcement Begins: What Changes Now",
+    "category": "AI",
+    "sub_topic": "Policy",
+    "created_at": "2026-05-09",
+    "faqs": [
+      {
+        "q": "What is the EU AI Act and what enforcement milestone was just reached?",
+        "a": "The EU AI Act is the world's first comprehensive AI regulation, classifying AI systems by risk level. As of May 2026, the high-risk AI provisions are now fully enforceable, requiring conformity assessments, human oversight mechanisms, and transparency reports from deployers of AI in sectors like healthcare, education, and critical infrastructure.\n\nSource: Reuters — EU AI Act high-risk provisions enter force"
+      },
+      {
+        "q": "How does the risk classification system work under the EU AI Act?",
+        "a": "Systems are classified as unacceptable risk (banned outright, e.g. social scoring), high-risk (regulated with strict requirements), limited risk (transparency obligations), and minimal risk (largely unregulated). High-risk includes AI used in hiring, credit scoring, biometric identification, and autonomous vehicles.\n\nSource: European Commission — EU AI Act risk classification explained"
+      },
+      {
+        "q": "Why does EU AI Act enforcement matter for global AI companies?",
+        "a": "Any company deploying AI to EU residents must comply regardless of where they are headquartered. Major US and Asian AI providers face fines of up to €35 million or 7% of global annual turnover for violations, creating a de facto global compliance standard similar to GDPR's extraterritorial effect.\n\nSource: Financial Times — EU's AI rules set to reshape Silicon Valley"
+      },
+      {
+        "q": "How does the EU AI Act compare to US and UK approaches to AI regulation?",
+        "a": "The EU favours prescriptive ex-ante rules; the US under the 2025 AI Executive Order relies on voluntary commitments and sector-specific agency guidance; the UK takes a principles-based, pro-innovation stance through existing regulators. Critics argue the EU approach risks stifling innovation while supporters say it creates legal certainty.\n\nSource: Brookings Institution — Comparing global AI governance frameworks"
+      },
+      {
+        "q": "What are the main concerns and limitations of the EU AI Act?",
+        "a": "Critics highlight definitional ambiguity around what constitutes a 'high-risk' system, compliance costs disproportionately affecting startups, and the pace of regulation lagging behind rapid model capability improvements. The Act also has limited jurisdiction over open-source models below certain capability thresholds.\n\nSource: Wired — Why experts say the EU AI Act has serious blind spots"
+      }
+    ]
+  },
+  {
+    "id": "1746698400000",
+    "slug": "openai-gpt-5-reasoning-deep-dive",
+    "title": "GPT-5 Reasoning: What's Actually New",
+    "category": "AI",
+    "sub_topic": "Models",
+    "created_at": "2026-05-08",
+    "faqs": [
+      {
+        "q": "What reasoning improvements does GPT-5 introduce over GPT-4o?",
+        "a": "GPT-5 introduces native chain-of-thought that is tightly integrated at training time rather than prompted at inference. OpenAI claims a 3x improvement on competition-level math (AIME) and a 2x improvement on PhD-level science questions (GPQA), without needing separate 'o-series' reasoning models.\n\nSource: OpenAI Blog — GPT-5: Our next frontier model"
+      },
+      {
+        "q": "How does GPT-5's internal reasoning mechanism work?",
+        "a": "GPT-5 uses a process reward model trained via large-scale reinforcement learning on verified solution chains. Rather than generating a single token stream, it maintains a latent scratchpad that is distilled into the final answer. The scratchpad is not visible to users by default but informs output quality.\n\nSource: The Information — Inside GPT-5's hidden reasoning engine"
+      },
+      {
+        "q": "Why does improved reasoning matter beyond benchmark scores?",
+        "a": "Real-world tasks like legal contract analysis, multi-step financial modelling, and autonomous coding agents require chained logical steps with error correction. Better native reasoning reduces hallucinations in complex tasks and allows agents to self-verify intermediate steps, making autonomous pipelines more reliable.\n\nSource: Harvard Business Review — Why AI reasoning matters more than raw knowledge"
+      },
+      {
+        "q": "How does GPT-5 reasoning compare to Google DeepMind's Gemini 2.0 Ultra?",
+        "a": "On standardised reasoning benchmarks, GPT-5 and Gemini 2.0 Ultra are closely matched, with GPT-5 leading on text-only math and Gemini 2.0 Ultra ahead on multimodal reasoning tasks involving charts and diagrams. Independent evaluators note GPT-5 has lower variance in output quality.\n\nSource: Nature — AI reasoning benchmarks 2026: A systematic review"
+      },
+      {
+        "q": "What are the concerns around GPT-5's reasoning capabilities?",
+        "a": "Researchers warn that confident-sounding chain-of-thought can mask errors that are harder to spot than in simpler outputs. There are also concerns about reasoning being used to construct more convincing but factually wrong arguments, and the lack of interpretability into the latent scratchpad.\n\nSource: AI Safety Institute — Risks in advanced AI reasoning systems"
+      }
+    ]
+  },
+  {
+    "id": "1746612000000",
+    "slug": "ai-coding-assistants-2026-comparison",
+    "title": "AI Coding Assistants in 2026: Which One Wins?",
+    "category": "AI",
+    "sub_topic": "Tools",
+    "created_at": "2026-05-07",
+    "faqs": [
+      {
+        "q": "What are the leading AI coding assistants as of mid-2026?",
+        "a": "The major contenders are GitHub Copilot (powered by GPT-5), Cursor (with Claude 4 and GPT-5 backends), JetBrains AI Assistant, Google's Gemini Code Assist, and Amazon Q Developer. Claude Code (Anthropic's CLI tool) is gaining traction for agentic, multi-file tasks in terminal workflows.\n\nSource: Stack Overflow — Developer Survey 2026: AI tool adoption"
+      },
+      {
+        "q": "How do these tools differ in their approach to code generation?",
+        "a": "Copilot and Gemini Code Assist focus on inline completions and chat within IDEs. Cursor differentiates with a full IDE built around model context, supporting whole-codebase awareness. Claude Code targets agentic terminal workflows where the AI can run commands, read files, and iterate. Amazon Q specialises in AWS-native code generation and security scanning.\n\nSource: InfoQ — AI-native IDEs vs AI-augmented IDEs in 2026"
+      },
+      {
+        "q": "Why has multi-file context become the defining feature of AI coding tools?",
+        "a": "As model context windows expanded to 200k–1M tokens, tools that leverage full-repo context produce dramatically better refactors and bug fixes. Developers report 60% fewer context-switching interruptions when tools understand inter-file dependencies. Partial context tools increasingly feel limiting by comparison.\n\nSource: ThoughtWorks — Technology Radar 2026: AI-augmented development"
+      },
+      {
+        "q": "How do AI coding assistants compare on security and privacy?",
+        "a": "Enterprise buyers differentiate heavily on data handling: GitHub Copilot Enterprise and Amazon Q offer private model instances where code never trains public models. Open-source alternatives like Continue.dev with local Ollama models are popular in regulated industries. Most SaaS tools now offer zero-retention API modes.\n\nSource: Gartner — Magic Quadrant for AI Code Assistants 2026"
+      },
+      {
+        "q": "What are the limitations and concerns with current AI coding assistants?",
+        "a": "Studies show developers using AI coding tools still introduce subtle logic bugs at similar rates to manual coding, while producing code faster. Over-reliance risks skill atrophy in junior developers. Licence contamination remains a concern as models trained on public repos may reproduce GPL-licensed patterns without attribution.\n\nSource: ACM — Empirical study of AI-assisted software defect rates"
+      }
+    ]
+  },
+  {
+    "id": "1746525600000",
+    "slug": "deepmind-alphafold-3-protein-interactions",
+    "title": "AlphaFold 3 and the Future of Drug Discovery",
+    "category": "AI",
+    "sub_topic": "Research",
+    "created_at": "2026-05-06",
+    "faqs": [
+      {
+        "q": "What did Google DeepMind announce about AlphaFold 3?",
+        "a": "DeepMind released an expanded AlphaFold 3 update that extends structure prediction to DNA-protein, RNA-protein, and small molecule-protein interactions with state-of-the-art accuracy. The update includes a new diffusion-based architecture that outperforms prior physics-based docking methods on PoseBusters benchmarks.\n\nSource: Nature — AlphaFold 3 predicts the structure of all of life's molecules"
+      },
+      {
+        "q": "How does AlphaFold 3's diffusion architecture work?",
+        "a": "AlphaFold 3 replaces the Evoformer-based structure module with a diffusion network that generates all atomic coordinates jointly. Starting from random noise, the model iteratively refines coordinates conditioned on multiple sequence alignments and template features, enabling it to model flexible ligand binding poses naturally.\n\nSource: Science — Architecture and performance of AlphaFold 3"
+      },
+      {
+        "q": "Why does AlphaFold 3 matter for pharmaceutical drug discovery?",
+        "a": "Predicting how small molecule drugs bind to protein targets is a multi-billion dollar bottleneck in early drug discovery. AlphaFold 3's ability to jointly model protein-ligand interactions enables virtual screening of millions of compounds in silico before costly wet-lab synthesis, potentially cutting years from discovery timelines.\n\nSource: STAT News — How AlphaFold 3 is transforming early-stage drug discovery"
+      },
+      {
+        "q": "How does AlphaFold 3 compare to traditional computational docking methods?",
+        "a": "Classical docking tools like AutoDock and Glide model rigid or semi-flexible proteins with empirical scoring functions. AlphaFold 3 learns binding geometry end-to-end from experimental structures, achieving 76% success on PoseBusters versus ~50% for leading classical methods, particularly excelling on novel binding sites without prior experimental data.\n\nSource: Journal of Chemical Information and Modeling — AlphaFold 3 vs classical docking: A benchmark"
+      },
+      {
+        "q": "What are the limitations and concerns around AlphaFold 3?",
+        "a": "AlphaFold 3's commercial API terms restrict use for drug development without a paid licence, creating controversy in the open-science community. Accuracy drops for proteins with limited homologues in training data. Predicted binding poses still require experimental validation, and the model cannot simulate dynamics or binding kinetics.\n\nSource: The Lancet — Open science concerns around AlphaFold 3 commercialisation"
+      }
+    ]
+  },
+  {
+    "id": "1746439200000",
+    "slug": "open-source-llm-landscape-2026",
+    "title": "Open-Source LLMs in 2026: The State of Play",
+    "category": "AI",
+    "sub_topic": "Models",
+    "created_at": "2026-05-05",
+    "faqs": [
+      {
+        "q": "What are the leading open-source LLMs as of mid-2026?",
+        "a": "Meta's Llama 4 series (Scout, Maverick, Behemoth), Mistral Large 3, Alibaba's Qwen 3, and Google's Gemma 3 lead the open-weight category. Llama 4 Maverick, with 400B active parameters via mixture-of-experts, has matched GPT-4o on several benchmarks while remaining freely downloadable.\n\nSource: Hugging Face Blog — Open LLM Leaderboard 2026 mid-year update"
+      },
+      {
+        "q": "How has the capability gap between open and closed models changed?",
+        "a": "In 2023 the gap between GPT-4 and the best open models was significant. By mid-2026, Llama 4 Maverick scores within 5% of GPT-5 on MMLU and coding benchmarks. The remaining frontier gap is largest on complex multi-step reasoning and very long-context tasks where closed models still lead.\n\nSource: Epoch AI — Tracking the open vs closed AI capability gap"
+      },
+      {
+        "q": "Why do open-source models matter for the broader AI ecosystem?",
+        "a": "Open weights enable local deployment, eliminating API costs and data privacy concerns. They power the fine-tuning ecosystem, with thousands of specialised derivatives for medicine, law, and code. They also serve as research baselines and provide competitive pressure that has accelerated capability releases from closed-model providers.\n\nSource: Stanford HAI — The value of open foundation models"
+      },
+      {
+        "q": "How do open-source LLMs compare to closed models on safety and alignment?",
+        "a": "Open models typically receive less safety fine-tuning investment than frontier closed models, and once weights are released they cannot be patched. However, the open-source community has developed robust post-training safety techniques. Meta's Llama Guard and Llama 3 Instruct include safety layers competitive with Claude and GPT in independent red-teaming evaluations.\n\nSource: AI Safety Fund — Safety evaluation of open-weight language models"
+      },
+      {
+        "q": "What are the concerns and limitations of the open-source LLM ecosystem?",
+        "a": "Open weights can be misused for generating misinformation, cyberattack tooling, and CSAM, and cannot be recalled once released. Smaller organisations lack the compute for rigorous safety evaluations before release. Licensing inconsistencies (Llama's commercial restrictions, Mistral's Apache 2.0) create legal uncertainty for enterprises.\n\nSource: Center for AI Safety — Risks of openly releasing large language model weights"
+      }
+    ]
+  },
+  {
+    "id": "1746352800000",
+    "slug": "ai-video-generation-sora-runway-2026",
+    "title": "AI Video Generation: Sora, Runway, and Beyond",
+    "category": "AI",
+    "sub_topic": "Tools",
+    "created_at": "2026-05-04",
+    "faqs": [
+      {
+        "q": "What is the current state of AI video generation tools in 2026?",
+        "a": "OpenAI's Sora, Runway Gen-4, Google Veo 3, and Kling 2.0 are the leading text-to-video platforms. Sora now supports up to 2-minute 1080p clips with consistent characters across scenes. Runway Gen-4 specialises in cinematic control with camera movement prompting. Veo 3 integrates with Google's production pipeline for YouTube creators.\n\nSource: The Verge — The best AI video generators in 2026"
+      },
+      {
+        "q": "How does AI video generation technology work at a high level?",
+        "a": "Modern text-to-video models are latent diffusion transformers trained on large video datasets. A text encoder converts prompts to embeddings, which condition a diffusion process operating in compressed latent space. A decoder then converts latent frames to pixels. Temporal consistency modules ensure coherent motion between frames.\n\nSource: Runway Research Blog — How Gen-4 generates consistent video"
+      },
+      {
+        "q": "Why is AI video generation important for creative industries?",
+        "a": "Independent filmmakers, marketers, and game studios can now prototype scenes, generate B-roll, and create explainer videos without crews or 3D render farms. Production companies report 70% cost reductions for pre-visualisation. The technology is democratising storytelling for creators who previously lacked budgets for professional video.\n\nSource: Variety — How AI video is reshaping Hollywood's pre-production"
+      },
+      {
+        "q": "How do Sora and Runway Gen-4 compare to earlier AI video tools?",
+        "a": "First-generation tools like Stable Video Diffusion produced 3-4 second clips with flickering and inconsistent subjects. Sora and Gen-4 maintain consistent characters, coherent physics, and cinematic lighting for up to two minutes. Prompt adherence has improved dramatically, though complex multi-character scenes with dialogue remain challenging.\n\nSource: Digital Trends — AI video generation: 2023 vs 2026 compared"
+      },
+      {
+        "q": "What are the concerns and ethical limitations of AI video generation?",
+        "a": "Deepfake creation has become trivially accessible, raising urgent concerns about non-consensual intimate imagery, political misinformation, and fraud. Content authentication standards (C2PA) are being adopted by major platforms but are not universally enforced. Training data provenance disputes have led to multiple class-action lawsuits against AI video companies.\n\nSource: BBC News — The deepfake crisis: How AI video is being misused"
+      }
+    ]
+  },
+  {
+    "id": "1746266400000",
+    "slug": "ai-agents-autonomous-workflows-2026",
+    "title": "AI Agents: Autonomous Workflows Are Here",
+    "category": "AI",
+    "sub_topic": "Tools",
+    "created_at": "2026-05-03",
+    "faqs": [
+      {
+        "q": "What are AI agents and what recent milestone have they reached?",
+        "a": "AI agents are LLM-based systems that autonomously plan and execute multi-step tasks by calling tools, browsing the web, writing code, and managing files. In 2026, agents from Anthropic (Claude Code), OpenAI (Operator), and Google (Project Mariner) can reliably complete complex software engineering and research tasks with minimal human checkpoints.\n\nSource: MIT Technology Review — The age of AI agents has arrived"
+      },
+      {
+        "q": "How do AI agents plan and execute multi-step tasks?",
+        "a": "Agents use a plan-act-observe loop: the LLM generates a plan, executes a tool call (web search, code execution, file edit), observes the output, and iterates. Frameworks like LangGraph, AutoGen, and Anthropic's Agent SDK manage state, memory, and tool routing. Long-horizon tasks are decomposed into sub-agents that run in parallel.\n\nSource: LangChain Blog — How modern AI agents reason and act"
+      },
+      {
+        "q": "Why do autonomous AI workflows matter for business productivity?",
+        "a": "Agents can now compress days of research, data analysis, and report drafting into hours. Early enterprise deployments report 40-70% time savings on tasks like competitive intelligence, contract review, and software testing. The key shift is from AI as a writing assistant to AI as a delegatable autonomous worker.\n\nSource: McKinsey — The productivity impact of AI agent deployment"
+      },
+      {
+        "q": "How do 2026 AI agents compare to earlier automation approaches like RPA?",
+        "a": "Robotic Process Automation (RPA) requires explicit scripting for each workflow and breaks when UIs change. AI agents understand natural language instructions, adapt to unexpected states, and can generalise across novel tasks without reprogramming. However, agents are less deterministic and harder to audit than RPA, posing compliance challenges.\n\nSource: Forrester — AI agents vs RPA: The next generation of automation"
+      },
+      {
+        "q": "What are the safety and reliability concerns with autonomous AI agents?",
+        "a": "Agents operating with broad tool access can make irreversible changes — deleting files, sending emails, committing code — without human review. Prompt injection attacks can hijack agent behaviour via malicious content in web pages or documents. Current best practices emphasise minimal permissions, human-in-the-loop checkpoints, and comprehensive action logging.\n\nSource: OWASP — Top 10 security risks for LLM-based agents"
+      }
+    ]
+  },
+  {
+    "id": "1746180000000",
+    "slug": "ai-safety-interpretability-research-2026",
+    "title": "AI Safety and Interpretability: 2026 Research Highlights",
+    "category": "AI",
+    "sub_topic": "Research",
+    "created_at": "2026-05-02",
+    "faqs": [
+      {
+        "q": "What are the most significant AI safety research developments in early 2026?",
+        "a": "Anthropic's mechanistic interpretability team published findings on feature superposition in large transformers, identifying circuits responsible for deceptive reasoning patterns. Deepmind's MIRI-adjacent researchers demonstrated scalable oversight techniques that maintain alignment in models up to 70B parameters, and OpenAI released the o3-mini safety evaluation framework.\n\nSource: Anthropic Research — Progress on mechanistic interpretability"
+      },
+      {
+        "q": "How does mechanistic interpretability research work?",
+        "a": "Mechanistic interpretability reverse-engineers neural networks to identify specific computational circuits — patterns of neurons and attention heads — that implement identifiable behaviours. Researchers use activation patching, sparse autoencoders, and causal tracing to map which components activate for which concepts, building a 'circuit diagram' of model internals.\n\nSource: Distill.pub — A mathematical framework for transformer circuits"
+      },
+      {
+        "q": "Why does AI interpretability matter for safety and deployment?",
+        "a": "Opaque models are difficult to audit for dangerous capabilities, misaligned goals, or biased decision processes. Interpretability tools allow engineers to verify that a model's reasoning matches its stated explanation, detect deceptive alignment, and surgically edit behaviours without full retraining. Regulators are increasingly requiring interpretability evidence for high-risk AI deployments.\n\nSource: AI Safety Institute — Interpretability as a prerequisite for AI governance"
+      },
+      {
+        "q": "How does current AI safety research compare to what existed in 2022?",
+        "a": "In 2022, AI safety was largely theoretical, with small research teams and limited industry buy-in. By 2026, major labs have dedicated safety teams of 50-200 researchers, safety benchmarks have proliferated, and interpretability has moved from toy models to production-scale transformers. Government AI Safety Institutes in the US, UK, EU, and Japan have created external evaluation infrastructure.\n\nSource: Center for Human-Compatible AI — The state of AI safety research 2026"
+      },
+      {
+        "q": "What are the limitations and open problems in current AI safety research?",
+        "a": "Interpretability techniques that work on 7B models often fail to scale to 100B+ models due to superposition complexity. Alignment techniques proven in lab settings may not generalise to deployment environments. There is no consensus on how to evaluate whether a model has deceptive intent, and the field lacks standardised safety benchmarks analogous to capability benchmarks.\n\nSource: Paul Christiano, Alignment Forum — Unsolved problems in AI safety"
+      }
+    ]
+  },
+  {
+    "id": "1746093600000",
+    "slug": "us-ai-executive-order-2025-impact",
+    "title": "US AI Executive Order 2025: One Year On",
+    "category": "AI",
+    "sub_topic": "Policy",
+    "created_at": "2026-05-01",
+    "faqs": [
+      {
+        "q": "What did the 2025 US AI Executive Order establish?",
+        "a": "The 2025 AI Executive Order directed federal agencies to develop sector-specific AI guidelines, required safety evaluations for frontier models above a compute threshold, established an AI Safety Board within NIST, and mandated watermarking standards for government-produced synthetic content. It superseded the Biden-era 2023 EO with a more industry-collaborative approach.\n\nSource: White House — Executive Order on Advancing United States AI Leadership"
+      },
+      {
+        "q": "How has the Executive Order been implemented across federal agencies?",
+        "a": "NIST released the AI Risk Management Framework 2.0, the FDA issued guidance on AI-based medical devices requiring post-market surveillance, the SEC proposed rules on AI-generated investment advice disclosures, and the DoD published responsible AI principles binding on defence contractors. Implementation has been uneven, with some agencies ahead of schedule and others delayed by resource constraints.\n\nSource: Brookings Institution — One year of the 2025 AI Executive Order: A progress report"
+      },
+      {
+        "q": "Why does the US AI policy approach matter globally?",
+        "a": "As home to the majority of frontier AI developers, US policy shapes global AI development norms. The voluntary commitment approach influences international standards bodies like ISO/IEC and the OECD AI Policy Observatory. US-EU regulatory divergence on AI creates compliance complexity for multinational companies and tensions in transatlantic tech diplomacy.\n\nSource: Council on Foreign Relations — The geopolitics of AI regulation"
+      },
+      {
+        "q": "How does the US approach compare to China's AI regulation?",
+        "a": "China has implemented mandatory algorithm recommendations regulations, generative AI service rules requiring security assessments, and deep synthesis (deepfake) labelling requirements — all more prescriptive than the US approach. China prioritises content control and party alignment, while the US focuses on national security and economic competitiveness, creating fundamentally different regulatory philosophies.\n\nSource: CSET Georgetown — Comparing US and China AI governance frameworks"
+      },
+      {
+        "q": "What are the criticisms and limitations of the current US AI policy framework?",
+        "a": "Critics from the left argue voluntary commitments are unenforceable and that the US lacks the comprehensive liability framework and enforcement mechanisms of the EU AI Act. Critics from the right argue even current guidance is regulatory overreach that disadvantages US AI firms versus less-regulated Chinese competitors. Both sides note a lack of dedicated AI regulatory agency with real enforcement power.\n\nSource: Lawfare — The inadequacy of voluntary AI governance"
+      }
+    ]
+  }
+]
